@@ -28,3 +28,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## STOPPED AT 1.02.17
+
+ng g guard then select can activate.

@@ -36,12 +36,14 @@ export class UserService {
           if (userRoles[i].roleName === allowedRoles[j]) {
             isMatch = true;
             return isMatch;
-          } else {
+          } 
+          else {
             return isMatch;
           }
           }
         }
     }
+    return isMatch;
   }
 }
 
