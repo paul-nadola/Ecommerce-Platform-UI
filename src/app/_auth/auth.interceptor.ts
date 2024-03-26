@@ -3,7 +3,10 @@ import { Observable,throwError } from "rxjs";
 import { catchError } from "rxjs/operators";
 import { UserAuthService } from "../_services/user-auth.service";
 import { Router } from "@angular/router";
+import { Injectable } from "@angular/core";
 
+
+@Injectable()
 export class AuthInterceptor implements HttpInterceptor{
 
     constructor (
