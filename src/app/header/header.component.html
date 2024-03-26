@@ -1,4 +1,22 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<mat-toolbar color="primary">
+
+    <span>
+        NADDY MARKET PLACE
+    </span>
+    <span class="space-buttons"></span>
+    <button *ngIf="! isLoggedIn()" routerLink="/login" mat-raised-button color="primary">
+        Login
+    </button>
+    <button *ngIf="isLoggedIn()" (click)="logout()" mat-raised-button color="warn">
+        Logout
+    </button>
+
+</mat-toolbar>
+
+
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">NADDY MARKET PLACE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -30,4 +48,4 @@
             </button>
         </div>
     </div>
-</nav>
+</nav> -->

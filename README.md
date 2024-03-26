@@ -30,3 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## STOPPED AT 1.02.17
 
 ng g guard then select can activate.
+
+ng add @angular/material  --> adding and configuring angular material for components
+
+Click on components - select the prefered component - click on APIs to import the component and import them on the app.module.ts script - 
