@@ -33,4 +33,6 @@ ng g guard then select can activate.
 
 ng add @angular/material  --> adding and configuring angular material for components
 
-Click on components - select the prefered component - click on APIs to import the component and import them on the app.module.ts script - 
+Click on components - select the prefered component - click on APIs to import the component and import them on the app.module.ts script
+
+ - 
