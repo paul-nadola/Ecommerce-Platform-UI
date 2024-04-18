@@ -37,6 +37,7 @@ export class AddNewProductComponent implements OnInit {
         (response:Product) => {
           // console.log(response)
           productForm.reset();
+          this.product.productImages = [];
         },
         (error:HttpErrorResponse) => {
           console.log(error)
