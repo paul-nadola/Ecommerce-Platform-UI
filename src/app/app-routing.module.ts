@@ -21,7 +21,7 @@ const routes: Routes = [
           product: ProductResolveServiceService
         }
   },
-  { path: 'showProductDetails', component: ShowProductDetailsComponent }
+  { path: 'showProductDetails', component: ShowProductDetailsComponent, canActivate: [AuthGuard], data: { roles: ['admin'] } }
 ];
 
 @NgModule({
