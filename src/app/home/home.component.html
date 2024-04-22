@@ -1,5 +1,32 @@
 <div class="container mt-5">
-    <div class="card text-center" style="padding: 20px;">
-        <h1>This is the home page</h1>
-    </div>
+    <mat-grid-list cols="4" rowHeight="3:10" gutterSize="10">
+        <!-- adjusting card measurements -->
+        <mat-grid-tile
+        *ngFor="let p of productDetails"
+        >
+            <div class="row home-page-product-image">
+                <img [src]="p.productImages[0].url" alt="Product Image">
+                <div class="mt-3">
+                    <p><b>{{p.productName}}</b></p>
+                </div>
+                <div class="mt-2">
+                    <p
+                    style="white-space: inherit; height: 80px;width: 280px;overflow: hidden; text-overflow: ellipsis;"
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur dolorem libero quaerat dignissimos! Adipisci iste neque culpa ducimus architecto reiciendis itaque illum praesentium ipsa amet eum magnam, explicabo non id distinctio minus molestiae aut excepturi rem. Eius error corporis aliquam repellat, illum laboriosam labore autem, quae adipisci tempora harum facilis.
+                    <!-- {{p.productDescription}} -->
+                </p>
+                </div>
+                <div class="mt-2">
+                    <p><s>Actual Price Kshs: {{p.productActualPrice}}</s></p>
+                </div>
+                <div class="mt-2">
+                    <p><b>Discounted Price</b> Kshs: {{p.productDiscountedPrice}}</p>
+                </div>
+                <div class="mt-2">
+                    <button type="button" mat-raised-button color="primary">View Details</button>
+                </div>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+
 </div>
