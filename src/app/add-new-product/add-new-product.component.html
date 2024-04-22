@@ -26,7 +26,16 @@
                     </mat-form-field>
                     <div align="end">
                         <button mat-stroked-button color="primary" style="margin-right: 5px;">Clear</button>
-                        <button type="submit" mat-stroked-button  color="primary">Add Product</button>
+                        <button type="submit" *ngIf="isNewProduct"
+                        mat-stroked-button  color="primary"
+                        >
+                        Add Product
+                        </button>
+                        <button type="submit" *ngIf="!isNewProduct"
+                        mat-stroked-button color="primary"
+                        >
+                        Update Product
+                        </button>
                     </div>
                 </form>
             </div>
