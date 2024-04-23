@@ -1,5 +1,5 @@
 <div class="container mt-5">
-    <mat-grid-list cols="4" rowHeight="3:10" gutterSize="10">
+    <mat-grid-list cols="2" rowHeight="4:7" gutterSize="10">
         <!-- adjusting card measurements -->
         <mat-grid-tile
         *ngFor="let p of productDetails"
@@ -26,7 +26,7 @@
                     <p><b>Discounted Price</b> Kshs: {{p.productDiscountedPrice}}</p>
                 </div>
                 <div class="mt-2">
-                    <button type="button" mat-raised-button color="primary">View Details</button>
+                    <button type="button" mat-raised-button color="primary" (click)="showProductDetails(p.productId)">View Details</button>
                 </div>
             </div>
         </mat-grid-tile>

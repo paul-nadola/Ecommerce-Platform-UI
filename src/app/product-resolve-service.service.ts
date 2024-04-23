@@ -4,7 +4,7 @@ import { Product } from './_model/product.model';
 import { Observable, map, of } from 'rxjs';
 import { ProductService } from './_services/product.service';
 import { ImageProcessingService } from './image-processing.service';
-
+//LOADS THE DATA FROM THE BACKEND FIRST THEN DISPLAY IT ON THE UI(HTML)
 @Injectable({
   providedIn: 'root'
 })
