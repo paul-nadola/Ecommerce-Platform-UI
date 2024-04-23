@@ -16,7 +16,7 @@ import { Router } from '@angular/router';
 export class ShowProductDetailsComponent {
 
   productDetails: Product [] = [];
-  displayedColumns: string[] = ['Product Id', 'Product Name', 'Product Description', 'Product Discounted Price', 'Product Actual Price', 'Images', 'Edit','Delete'];
+  displayedColumns: string[] = ['Product Id', 'Product Name', 'description', 'Product Discounted Price', 'Product Actual Price', 'Actions'];
 
   constructor(
     private productService: ProductService,
